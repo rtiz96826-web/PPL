@@ -1,0 +1,378 @@
+<head>
+  <!-- 🌐 Basic Meta Setup -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ritik Solanki • Personal Portfolio</title>
+  <meta name="description" content="A creative web developer portfolio showcasing modern UI/UX, projects, and skills.">
+  <meta name="keywords" content="Ritik Solanki, Web Developer, Portfolio, JavaScript, React, Tailwind CSS">
+  <meta name="author" content="Ritik Solanki">
+
+  <!-- 🧪 SEO & Social Sharing (Open Graph) -->
+  <meta property="og:title" content="Ritik Solanki • Web Developer">
+  <meta property="og:description" content="Creative Portfolio with Modern Web Development Skills.">
+  <meta property="og:image" content="images/portfolio-preview.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://your-future-portfolio.com">
+
+  <!-- 📱 Favicons -->
+  <link rel="icon" type="image/png" href="images/favicon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/svg+xml" href="images/favicon/favicon.svg">
+  <link rel="shortcut icon" href="images/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-title" content="MyWebSite">
+  <link rel="manifest" href="images/favicon/site.webmanifest">
+
+  <!-- 🧠 Custom Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Jaro&display=swap" rel="stylesheet">
+
+  <!-- 🧩 Tailwind & Custom Styles -->
+  <link rel="stylesheet" href="./dist/output.css"> <!-- Tailwind Compiled CSS -->
+  <link rel="stylesheet" href="./css/style.css"> <!-- Your Custom CSS -->
+
+  <!-- 🎯 FontAwesome Icons -->
+  <link rel="stylesheet" href="fonts/fontAwesome/fontawesome-all.css">
+
+  <!-- ⚡ Preload Faster Font Loading -->
+  <link rel="preload" href="fonts/Jaro-Regular.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+
+<body class="pt-20 bg-[#1E2B3F] font-['Jaro']">
+  <header class="fixed left-0 right-0 top-0 z-50 bg-[#1E2B3F] shadow-lg">
+    <div class="container w-full mx-auto">
+      <div class="menu">
+        <nav>
+          <div class="px-2 mx-auto max-w-7xl lg:px-8">
+            <div class="relative flex items-center justify-between h-16">
+              <div class="absolute inset-y-0 right-0 flex items-center sm:hidden">
+                <button type="button"
+                  class="relative inline-flex items-center justify-center p-2 text-gray-400 transition-transform duration-300 ease-in-out hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                  aria-controls="mobile-menu" aria-expanded="false" id="mobile-menu-button">
+                  <span class="sr-only">Open main menu</span>
+                  <svg class="block w-6 h-6 transition-transform duration-300 ease-in-out transform" fill="none"
+                    viewbox="0 0 24 24" stroke-width="1.5" stroke="currentcolor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+                  </svg>
+                  <svg class="hidden w-6 h-6 transition-transform duration-300 ease-in-out transform" fill="none"
+                    viewbox="0 0 24 24" stroke-width="1.5" stroke="currentcolor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="flex items-center flex-1 sm:items-stretch sm:justify-between">
+                <div class="flex items-center shrink-0"><a href=""><img src="images/Logo.svg" alt="Logo"></a></div>
+                <div class="hidden sm:ml-6 sm:flex font-['Jaro']">
+                  <div class="flex space-x-4">
+                    <a href="#" class="px-3 py-2 text-sm font-medium text-white hover:text-teal-200"
+                      aria-current="page">Skills</a>
+                    <a href="#" class="px-3 py-2 text-sm font-medium text-white hover:text-teal-200">Projects</a>
+                    <a href="#" class="px-3 py-2 text-sm font-medium text-white hover:text-teal-200">Portfolio</a>
+                  </div>
+                  <div class="sm:ml-12 call-btn">
+                    <button
+                      class="py-2 text-base text-white border border-white pointer-events-auto sm:text-xl btn-sm md:px-9 sm:px-8 hover:bg-teal-600 hover:border-teal-600">Get
+                      started today!</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="hidden p-3 space-y-1 bg-gradient-to-r from-[#2a3950] to-[#2A3950] sm:hidden" id="mobile-menu"> -->
+          <div id="mobile-menu"
+            class="hidden transform transition-all duration-300 ease-in-out origin-top scale-y-0 opacity-0 bg-gradient-to-r from-[#2a3950] to-[#2A3950] p-3 sm:hidden">
+            <div class="mb-10 space-y-1">
+              <a href="#" class="block px-3 py-2 text-base font-medium text-white rounded-md hover:bg-teal-600"
+                aria-current="page">Skills</a>
+              <a href="#"
+                class="block px-3 py-2 text-base font-medium text-white rounded-md hover:bg-teal-600">Projects</a>
+              <a href="#"
+                class="block px-3 py-2 text-base font-medium text-white rounded-md hover:bg-teal-600">Portfolio</a>
+            </div>
+            <div class="call-btn">
+              <button
+                class="py-2 text-base text-white border border-white pointer-events-auto sm:text-xl btn-sm px-9 hover:bg-teal-600 hover:border-teal-600">Get
+                started today!</button>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section
+    class="flex justify-center items-center mx-auto banner -z-10 bg-[#1E2B3F] bg-[url('/images/banner.jpg')] bg-no-repeat bg-cover bg-center h-fit opacity-0 fade-in-up">
+    <div
+      class="container relative px-2 pt-24 pb-5 sm:pb-0 sm:items-center sm:justify-between sm:flex max-w-7xl sm:px-6 lg:px-8">
+      <div class="relative z-10 w-full lg:w-3/5 info">
+        <h1 class="text-2xl text-white stroke-2 lg:text-7xl">The One-Stop Shop for Your Online Needs</h1>
+        <p class="my-5 text-base text-white sm:text-xl">Get ready to take your online presence to the next level with my
+          web development services.</p>
+        <p class="text-base text-white sm:text-xl">From sleek and functional designs to powerful e-commerce solutions,
+          I've got you covered.</p><button
+          class="py-2 mt-5 text-base text-white bg-teal-600 pointer-events-auto sm:text-xl px-9 hover:bg-teal-700">Get
+          started today!</button>
+      </div>
+      <div class="absolute bottom-0 right-0 sm:relative owner-photo"><img src="/images/banner-2.jpg" alt="banner-2"
+          class="sm:h-full opacity-65 sm:opacity-100 h-72"></div>
+    </div>
+  </section>
+  <section class="skills bg-[#1E2B3F] opacity-0 fade-in-left">
+    <div class="mx-auto sm:items-stretch md:flex md:justify-between lg:justify-center">
+      <div class="max-w-4xl lg:w-1/3 md:w-2/4"><img class="w-full h-fit sm:h-full" src="images/Skills-Background.png"
+          alt="Skills-Background"></div>
+      <div
+        class="z-10 flex flex-col items-center max-w-4xl p-4 lg:w-3/4 md:w-2/4 sm:p-9 md:-ml-5 drop-shadow-2xl bg-gradient-to-r from-[#2a395057] to-[#2A3950]">
+        <div class="heading mb-9">
+          <h2 class="text-4xl text-white stroke-2 lg:text-7xl">The Web Wizard Skills</h2>
+          <p class="mt-4 text-base text-white sm:text-xl">As a web developer, I possess a wide range of skills that
+            allow me to design, build, and maintain websites that are both functional and visually appealing. I have
+            experience with front-end and back-end technologies, as well as web optimization techniques, web
+            accessibility standards, and version control tools.</p>
+        </div>
+        <div class="items-center justify-between w-full skils-list space-y-9 lg:space-y-0 lg:flex">
+          <ul class="w-full lg:w-[48%] space-y-2">
+            <li class="flex justify-between text-base sm:text-xl">
+              <a href="" class="text-white text-pretty">HTML</a><img src="images/icons/5-Stars.svg" alt="5-Stars"
+                class="w-24 sm:w-auto">
+            </li>
+            <li class="flex justify-between text-base sm:text-xl">
+              <a href="" class="text-white text-pretty">CSS</a><img src="images/icons/5-Stars.svg" alt="5-Stars"
+                class="w-24 sm:w-auto">
+            </li>
+            <li class="flex justify-between text-base sm:text-xl">
+              <a href="" class="text-white text-pretty">JavaScript</a><img src="images/icons/5-Stars.svg" alt="5-Stars"
+                class="w-24 sm:w-auto">
+            </li>
+            <li class="flex justify-between text-base sm:text-xl">
+              <a href="" class="text-white text-pretty">PHP</a><img src="images/icons/5-Stars.svg" alt="5-Stars"
+                class="w-24 sm:w-auto">
+            </li>
+            <li class="flex justify-between text-base sm:text-xl">
+              <a href="" class="text-white text-pretty">WordPress</a><img src="images/icons/5-Stars.svg" alt="5-Stars"
+                class="w-24 sm:w-auto">
+            </li>
+            <li class="flex justify-between text-base sm:text-xl">
+              <a href="" class="text-white text-pretty">Git</a><img src="images/icons/5-Stars.svg" alt="5-Stars"
+                class="w-24 sm:w-auto">
+            </li>
+          </ul>
+          <div class="mx-auto border w-72 lg:h-16 lg:w-0 border-[#4A5C79] flex items-center"></div>
+          <ul class="w-full lg:w-[48%] space-y-2">
+            <li class="flex justify-between text-base sm:text-xl">
+              <a href="" class="text-white text-pretty">React</a><img src="images/icons/4-Stars.svg" alt="4-Stars"
+                class="w-24 sm:w-auto">
+            </li>
+            <li class="flex justify-between text-base sm:text-xl">
+              <a href="" class="text-white text-pretty">Node.js</a><img src="images/icons/4-Stars.svg" alt="4-Stars"
+                class="w-24 sm:w-auto">
+            </li>
+            <li class="flex justify-between text-base sm:text-xl">
+              <a href="" class="text-white text-pretty">Angular</a><img src="images/icons/4-Stars.svg" alt="4-Stars"
+                class="w-24 sm:w-auto">
+            </li>
+            <li class="flex justify-between text-base sm:text-xl">
+              <a href="" class="text-white text-pretty">Django</a><img src="images/icons/4-Stars.svg" alt="4-Stars"
+                class="w-24 sm:w-auto">
+            </li>
+            <li class="flex justify-between text-base sm:text-xl">
+              <a href="" class="text-white text-pretty">Web Optimization</a><img src="images/icons/4-Stars.svg"
+                alt="4-Stars" class="w-24 sm:w-auto">
+            </li>
+            <li class="flex justify-between text-base sm:text-xl">
+              <a href="" class="text-white text-pretty">Web Accessibility</a><img src="images/icons/3-Stars.svg"
+                alt="3-Stars" class="w-24 sm:w-auto">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="mt-20 opacity-0 mb-72 md:mt-56 md:mb-96 lg:mb-56 fade-in-right">
+    <div class="container mx-auto text-center">
+      <div class="p-2 mx-auto heading mb-9 lg:w-4/5">
+        <span class="text-2xl text-white">Web Development Portfolio</span>
+        <h2 class="text-4xl text-white stroke-2 lg:text-7xl">Check Out My Best Work</h2>
+        <p class="mt-4 text-base text-white sm:text-xl">As a web developer, I possess a wide range of skills that allow
+          me to design, build, and maintain websites that are both functional and visually appealing. I have experience
+          with front-end and back-end technologies, as well as web optimization techniques, web accessibility standards,
+          and version control tools.</p>
+      </div>
+      <div class="flex justify-start web-img"><img src="images/project-1.png" alt="project-1"></div>
+    </div>
+    <div class="container mx-auto">
+      <div class="relative justify-center p-content lg:flex md:-mt-[100px] lg:-mt-[349px]">
+        <div
+          class="heading bg-[#2c3a50dc] backdrop-filter backdrop-blur-lg max-w-[1068px] md:pt-10 md:pb-24 md:pl-10 md:pr-44 p-4">
+          <h2 class="text-2xl text-white stroke-2 lg:text-7xl">Personal brand website</h2>
+          <p class="mt-4 mb-10 text-white">This website was built from scratch using HTML, CSS, JavaScript, and React,
+            and features a clean and modern design that reflects the client's brand identity. The website is also fully
+            responsive, meaning it adapts seamlessly to any screen size or device. In addition, the website is optimized
+            for fast loading speeds and follows the latest web accessibility standards.</p>
+          <a href="javascript:void(0)"
+            class="relative font-sans text-base text-white duration-300 ease-in sm:text-xl hover:text-teal-500 group">
+            View website
+            <i
+              class="transition-all duration-300 transform rotate-45 fas fa-arrow-up left-2 group-hover:rotate-90 group-active:translate-x-2"></i>
+          </a>
+        </div>
+        <div class="web-img border-[#4A5C79] border-t absolute -z-10 right-0 lg:-top-[1px]"><img class=""
+            src="images/Portfolio-BG-Image-1.png" alt="Portfolio-BG-Image-1"></div>
+      </div>
+    </div>
+  </section>
+  <section class="opacity-0 fade-in-up">
+    <div class="container mx-auto text-center">
+      <div class="flex justify-end web-img"><img src="images/proejct-2.png" alt="proejct-2"></div>
+    </div>
+    <div class="container mx-auto">
+      <div class="relative p-content lg:flex md:-mt-[100px] lg:-mt-[349px]">
+        <div
+          class="heading bg-[#2c3a5085] backdrop-filter backdrop-blur-xl max-w-[1068px] md:pt-10 md:pb-24 lg:pr-10 md:pl-10 lg:pl-44 p-4">
+          <h2 class="text-2xl text-white stroke-2 lg:text-7xl">E-Commerce</h2>
+          <p class="mt-4 mb-10 text-white">This e-commerce website was created using WooCommerce and WordPress, and
+            features a custom shopping cart and checkout system that makes it easy for customers to purchase products.
+            The website also includes a variety of features to increase sales, such as product recommendations,
+            abandoned cart reminders, and social proof. To improve search engine visibility, the website was optimized
+            for targeted keywords and includes an ongoing SEO strategy.</p><a href="javascript:void(0)"
+            class="relative font-sans text-base text-white duration-300 ease-in sm:text-xl hover:text-teal-500 group">
+            View website
+            <i
+              class="transition-all duration-300 transform rotate-45 fas fa-arrow-up left-2 group-hover:rotate-90 group-active:translate-x-2"></i>
+          </a>
+        </div>
+        <div class="web-img border-[#4A5C79] border-t absolute -z-10 left-0 lg:-top-[1px]"><img class=""
+            src="images/Portfolio-BG-Image-2.png" alt="Portfolio-BG-Image-2"></div>
+      </div>
+    </div>
+  </section>
+  <section class="mb-20 opacity-0 mt-72 md:mt-96 lg:mt-56 fade-in-up">
+    <div class="container mx-auto text-center">
+      <div class="flex justify-start web-img"><img src="images/proejct-3.png" alt="proejct-3"></div>
+    </div>
+    <div class="container mx-auto">
+      <div class="relative justify-center p-content lg:flex md:-mt-[100px] lg:-mt-[349px]">
+        <div
+          class="heading bg-[#2c3a50dc] backdrop-filter backdrop-blur-lg max-w-[1068px] md:pt-10 md:pb-24 md:pl-10 md:pr-44 p-4">
+          <h2 class="text-2xl text-white stroke-2 lg:text-7xl">Management system</h2>
+          <p class="mt-4 mb-10 text-white">This content management system was built using Django and Python, and
+            provides the client with a user-friendly interface for managing their website content. With the CMS, the
+            client can easily create and publish new pages, blog posts, and multimedia content without needing any
+            technical knowledge. The website is also optimized for fast loading speeds and includes a variety of
+            security features to protect against potential threats.</p><a href="javascript:void(0)"
+            class="relative font-sans text-base text-white duration-300 ease-in sm:text-xl hover:text-teal-500 group">
+            View website
+            <i
+              class="transition-all duration-300 transform rotate-45 fas fa-arrow-up left-2 group-hover:rotate-90 group-active:translate-x-2"></i>
+          </a>
+        </div>
+        <div class="web-img border-[#4A5C79] border-t absolute -z-10 right-0 lg:-top-[1px] w-full"><img class=""
+            src="images/" alt=""></div>
+      </div>
+    </div>
+  </section>
+  <footer class="bg-gradient-to-r from-[#2a395057] to-[#2A3950]">
+    <div class="mx-auto sm:items-stretch md:flex md:justify-between lg:justify-center lg:items-center">
+      <div class="sm:w-auto md:w-1/2 lg:w-full">
+        <img class="w-full h-fit sm:h-full" src="images/footer.png" alt="footer">
+      </div>
+
+      <div class="flex flex-col max-w-4xl p-4 lg:w-4/5 md:w-2/4 sm:w-auto sm:p-9">
+        <div class="w-full mx-auto text-center lg:w-5/6">
+
+          <h1 class="mb-6 text-4xl font-bold text-white lg:text-6xl">
+            Let’s Build Your Digital Presence
+          </h1>
+
+          <p class="text-lg text-white/80">
+            Have a project in mind? Let’s collaborate and bring your ideas to life.
+          </p>
+          <p class="mt-2 text-lg text-white/80">
+            Reach me at
+            <a href="mailto:rtiz96826@gmail.com" class="font-sans font-semibold text-teal-400">
+              contact@rtk.com
+            </a>
+          </p>
+
+          <!-- ✨ BETTER BUTTON -->
+          <div class="mt-6">
+            <button class="px-8 py-3 text-white transition bg-teal-600 rounded-lg hover:bg-teal-700">
+              Get Started Today
+            </button>
+          </div>
+        </div>
+
+        <!-- SOCIAL ICONS -->
+        <div class="mt-16 text-center">
+          <ul class="flex justify-center space-x-7">
+            <li><a><i class="text-xl text-white fab fa-instagram"></i></a></li>
+            <li><a><i class="text-xl text-white fab fa-twitter"></i></a></li>
+            <li><a><i class="text-xl text-white fab fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="py-4 text-sm text-center text-gray-400">
+      <p>&copy; 2024 Ritik Solanki. All rights reserved.</p>
+      <p class="relative inline-block cursor-pointer group">
+        Design reference used from Figma Community
+        <span
+          class="absolute px-2 py-1 font-sans text-xs text-white transition -translate-x-1/2 bg-gray-800 rounded opacity-0 group-hover:opacity-100 -top-8 left-1/2">
+          Template by HOOBUX
+        </span>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    // 📱 Mobile Menu Toggle
+    document.getElementById('mobile-menu-button').onclick = () => {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');       // Show / Hide
+      menu.classList.toggle('scale-y-0');    // Smooth animation
+      menu.classList.toggle('opacity-0');    // Fade effect
+
+      // Toggle icons (hamburger / cross)
+      const icons = document.querySelectorAll('#mobile-menu-button svg');
+      icons[0].classList.toggle('hidden');
+      icons[1].classList.toggle('hidden');
+    };
+
+    // 🌀 Scroll Animation Using IntersectionObserver
+    document.addEventListener('DOMContentLoaded', function () {
+      const sections = document.querySelectorAll('section');
+
+      const options = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.5 // when 50% of the section is visible
+      };
+
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.remove('opacity-0');
+
+            // Add animation based on class
+            if (entry.target.classList.contains('fade-in-up')) {
+              entry.target.classList.add('animate-fadeInUp');
+            } else if (entry.target.classList.contains('fade-in-left')) {
+              entry.target.classList.add('animate-fadeInLeft');
+            } else if (entry.target.classList.contains('fade-in-right')) {
+              entry.target.classList.add('animate-fadeInRight');
+            }
+
+            observer.unobserve(entry.target); // Remove observer after animation
+          }
+        });
+      }, options);
+
+      // Observe all sections
+      sections.forEach(section => observer.observe(section));
+    });
+  </script>
+
+</body>
+
+</html>
